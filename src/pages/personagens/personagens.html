@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Characters</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <!--lista de avatares-->
+  <ion-list>
+      <ion-item *ngFor="let p of people" (click)="getPeopleInfo(p)"> <!--vai p infopage-->
+            <ion-avatar item-start>
+              <img *ngIf="p.name === 'Luke Skywalker'" src="http://sm.ign.com/ign_pt/screenshot/default/prod-luke-skywalker-in-star-wars-film_nzny.jpg">
+              <img *ngIf="p.name === 'Darth Vader'" src="http://starwarsblog.starwars.com/wp-content/uploads/2017/03/darth-vader-1-cover-header.jpg">
+              <img *ngIf="p.name === 'Leia Organa'" src="https://lovelace-media.imgix.net/uploads/518/ae5ab2b0-d4a0-0132-bfb7-0a13eebe068d.jpg">
+              <img *ngIf="p.name === 'C-3PO'" src="https://www.sideshowtoy.com/wp-content/uploads/2014/11/star-wars-c-3po-sixth-scale-thumb-2171.jpg">
+              <img *ngIf="p.name === 'R2-D2'" src="https://www.sideshowtoy.com/wp-content/uploads/2016/04/star-wars-r2-d2-legendary-scale-feature-400155.jpg">
+              <img *ngIf="p.name === 'Owen Lars'" src="https://vignette.wikia.nocookie.net/starwars/images/8/81/Owen-OP.jpg/revision/latest?cb=20070626181249">
+              <img *ngIf="p.name === 'Beru Whitesun lars'" src="http://theartmad.com/wp-content/uploads/2015/06/Beru-Lars-2.jpg">
+              <img *ngIf="p.name === 'R5-D4'" src="https://lumiere-a.akamaihd.net/v1/images/r5-d4_main_image_7d5f078e.jpeg?region=374%2C0%2C1186%2C666&width=768">
+              <img *ngIf="p.name === 'Biggs Darklighter'" src="https://vignette.wikia.nocookie.net/starwars/images/4/43/Biggs.png/revision/latest?cb=20130305010633">
+              <img *ngIf="p.name === 'Obi-Wan Kenobi'" src="https://nerdist.com/wp-content/uploads/2017/12/download.jpg">
+            </ion-avatar>
+        <h2>{{ p.name }}</h2>
+      </ion-item>
+    </ion-list>
+
+</ion-content>

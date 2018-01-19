@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Informations</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-card>
+        <img *ngIf="people.name === 'Luke Skywalker'" src="http://sm.ign.com/ign_pt/screenshot/default/prod-luke-skywalker-in-star-wars-film_nzny.jpg">
+        <img *ngIf="people.name === 'Darth Vader'" src="http://starwarsblog.starwars.com/wp-content/uploads/2017/03/darth-vader-1-cover-header.jpg">
+        <img *ngIf="people.name === 'Leia Organa'" src="https://lovelace-media.imgix.net/uploads/518/ae5ab2b0-d4a0-0132-bfb7-0a13eebe068d.jpg">
+        <img *ngIf="people.name === 'C-3PO'" src="https://www.sideshowtoy.com/wp-content/uploads/2014/11/star-wars-c-3po-sixth-scale-thumb-2171.jpg">
+        <img *ngIf="people.name === 'R2-D2'" src="https://www.sideshowtoy.com/wp-content/uploads/2016/04/star-wars-r2-d2-legendary-scale-feature-400155.jpg">
+        <img *ngIf="people.name === 'Owen Lars'" src="https://vignette.wikia.nocookie.net/starwars/images/8/81/Owen-OP.jpg/revision/latest?cb=20070626181249">
+        <img *ngIf="people.name === 'Beru Whitesun lars'" src="http://theartmad.com/wp-content/uploads/2015/06/Beru-Lars-2.jpg">
+        <img *ngIf="people.name === 'R5-D4'" src="https://lumiere-a.akamaihd.net/v1/images/r5-d4_main_image_7d5f078e.jpeg?region=374%2C0%2C1186%2C666&width=768">
+        <img *ngIf="people.name === 'Biggs Darklighter'" src="https://vignette.wikia.nocookie.net/starwars/images/4/43/Biggs.png/revision/latest?cb=20130305010633">
+        <ion-card-content>
+          <ion-card-title>
+            <strong>{{people.name}}</strong>
+            </ion-card-title>
+        
+        </ion-card-content>
+    </ion-card>
+
+
+
+
+</ion-content>
+
+
+
+
