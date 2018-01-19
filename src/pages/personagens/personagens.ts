@@ -27,18 +27,13 @@ public people: Array <{}>
 
   
                 {
-                //Criar carregamento
-                let loader = this.loadingCtrl.create({
-                  content: "Carregando...",
-                });
-                loader.present();
+
 
                 //Requisição HTTP
                  this.http.get(this.url)
                           .map(res => res .json())
                           .subscribe(data => {
-                            //Explodir carregamento
-                            loader.dismiss();
+          
 
                             this.people = data.results;
                             console.log(data.results)
