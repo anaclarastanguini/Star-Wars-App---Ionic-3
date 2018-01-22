@@ -20,16 +20,10 @@ private url: string = 'https://swapi.co/api/people/';
 public people: Array <{}>
 
   constructor(public navCtrl: NavController, 
-              public navParams: NavParams,
-              public loadingCtrl: LoadingController,                            
+              public navParams: NavParams,                            
               public http: Http, //requisição http
              ) 
-
-  
-                {
-
-
-                //Requisição HTTP
+               {                //Requisição HTTP
                  this.http.get(this.url)
                           .map(res => res .json())
                           .subscribe(data => {
@@ -46,6 +40,7 @@ public people: Array <{}>
 
   // ao clicar no personagem vai para a página de infos
   getPeopleInfo(p) {
-    this.navCtrl.push(InfoPage, {"people": p});
+
+    this.navCtrl.push(InfoPage, { "people": p }); //passa o parâmetro para a pág de infos
   }
   }

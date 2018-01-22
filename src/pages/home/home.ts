@@ -12,7 +12,7 @@ export class HomePage {
   constructor(public navCtrl: NavController)             
                {                   }
 
-           
+//comando para a pág home puxar a pág de personagens ao clicar no botão "let's go"           
 goToPersonagensPage() {
   this.navCtrl.push(PersonagensPage);
               }

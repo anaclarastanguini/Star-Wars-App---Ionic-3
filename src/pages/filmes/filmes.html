@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{film.title}}</ion-title> <!--exibe o título do filme-->
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-grid>
+      <!--exibe  o restante das infos sobre o filme em questão-->
+        <ion-row>
+          <ion-col col-12><strong>Title:</strong> {{film.title}} </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12><strong>Episode:</strong> {{film.episode_id}} </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12><strong>Opening Crawl:</strong> {{film.opening_crawl}} </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12><strong>Director:</strong> {{film.director}} </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12><strong>Producer:</strong> {{film.producer}} </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12><strong>Release Date:</strong> {{film.release_date}} </ion-col>
+        </ion-row>
+    </ion-grid>
+    
+    <!--cria ação do click para voltar para InfoPage-->
+    <button ion-button full (click)="backToInfoPage()">Back</button> 
+
+</ion-content>
